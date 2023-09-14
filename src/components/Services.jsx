@@ -3,7 +3,7 @@ import { PiBowlFoodBold } from "react-icons/pi";
 
 const Services = () => {
 	return (
-    <div className="mt-12 md:mt-20 mx-8 md:mx-16">
+    <div id="services" className="mt-12 md:mt-20 mx-8 md:mx-16">
     <div className="flex justify-center">
         <h3 className="text-2xl font-bold md:text-3xl uppercase tracking-wide py-2 border-b-2 border-orange-600">our Services</h3>
     </div>

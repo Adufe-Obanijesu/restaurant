@@ -2,7 +2,7 @@ import Member from "./atoms/Member";
 
 const Chef = () => {
 	return (
-		<section className="mt-16 md:mt-36 px-8 md:px-16 bg-white">
+		<section id="chef" className="mt-16 md:mt-36 px-8 md:px-16 bg-white">
             <div className="flex justify-center">
                 <h3 className="text-2xl font-bold md:text-3xl uppercase tracking-wide py-2 border-b-2 border-orange-600">our chefs</h3>
             </div>

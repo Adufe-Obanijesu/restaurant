@@ -2,7 +2,7 @@ import EachMeal from "./atoms/EachMeal";
 
 const Meal = () => {
 	return (
-    <div className="mt-12 md:mt-36 mx-16">
+    <div id="menu" className="mt-12 md:mt-36 mx-16">
     <div className="flex justify-center">
         <h3 className="text-2xl font-bold md:text-3xl uppercase tracking-wide py-2 border-b-2 border-orange-600">our menu</h3>
     </div>

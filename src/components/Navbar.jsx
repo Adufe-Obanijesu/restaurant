@@ -1,10 +1,15 @@
+import { useState } from "react";
+
 const Navbar = () => {
+
+	const [ show, setShow ] = useState(false);
+
 	return (
 		<nav className="bg-white">
 		  <div className="mx-auto max-w-screen-xl py-2 px-4 sm:px-6 lg:px-16">
 		    <div className="flex h-16 items-center justify-between">
 		      <div className="flex-1 md:flex md:items-center md:gap-12">
-		        <a className="block text-orange-600" to="/">
+		        <a className="block text-orange-600" href="#">
 		          <span className="sr-only">Home</span>
 		          <svg
 		            className="h-8"
@@ -26,7 +31,7 @@ const Navbar = () => {
 		            <li>
 		              <a
 		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
-		                to="/"
+		                href="#services"
 		              >
 		                Services
 		              </a>
@@ -35,7 +40,7 @@ const Navbar = () => {
 		            <li>
 		              <a
 		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
-		                to="/"
+		                href="#menu"
 		              >
 		                Menu
 		              </a>
@@ -44,7 +49,7 @@ const Navbar = () => {
 		            <li>
 		              <a
 		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
-		                to="/"
+		                href="#chef"
 		              >
 		                Chef
 		              </a>
@@ -53,7 +58,7 @@ const Navbar = () => {
 		            <li>
 		              <a
 		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
-		                to="/"
+		                href="#contact"
 		              >
 		                Contact
 		              </a>
@@ -66,13 +71,13 @@ const Navbar = () => {
 		          <div className="sm:flex sm:gap-4">
 		            <a
 		              className="rounded-full cursor-pointer bg-orange-600 px-5 py-2.5 text-sm font-medium text-white shadow transition ease-in duration-300 border-2 border-orange-600 hover:bg-transparent hover:text-orange-600"
-		              to="/"
+		              href="/"
 		            >
 		              Order Now
 		            </a>
 		          </div>
 
-		          <div className="block md:hidden">
+		          <div className="block md:hidden" onClick={() => setShow(true)}>
 		            <button
 		              className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
 		            >
@@ -96,6 +101,58 @@ const Navbar = () => {
 		      </div>
 		    </div>
 		  </div>
+
+		  <div className={`bg-white shadow flex justify-center pt-20 px-3 fixed w-1/2 h-screen top-0 right-0 transition duration-900 ease z-50 ${show ? "flex" : "hidden"} md:hidden`}>
+				<div className="h-10 w-10 md:hidden cursor-pointer absolute right-6 top-8" onClick={() => setShow(false)}>
+					<img src="/cancel.png" className="object-cover" alt="menu" layout="fill" />
+				</div>
+				<ul className="">
+					<li className="py-4">
+		              <a
+		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+		                href="#"
+		              >
+		                Home
+		              </a>
+		            </li>
+
+		            <li className="py-4">
+		              <a
+		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+		                href="#services"
+		              >
+		                Services
+		              </a>
+		            </li>
+
+		            <li className="py-4">
+		              <a
+		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+		                href="#menu"
+		              >
+		                Menu
+		              </a>
+		            </li>
+
+		            <li className="py-4">
+		              <a
+		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+		                href="#chef"
+		              >
+		                Chef
+		              </a>
+		            </li>
+					<li className="py-4">
+		              <a
+		                className="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+		                href="#contact"
+		              >
+		                Contact
+		              </a>
+		            </li>
+				</ul>
+			</div>
+
 		</nav>
 	)
 }
