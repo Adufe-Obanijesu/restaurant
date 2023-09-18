@@ -1,8 +1,32 @@
-# React + Vite
+# __Restaurant Website__
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+A tasty and eye-catchy website for your restaurant.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Demo Image](https://github.com/Adufe-Obanijesu/restaurant/blob/main/public/images/thumbnail.jpg?raw=true)
+
+## __Live Demo__
+Click [here](https://dreamy-empanada-a66515.netlify.app/) to view the live demo
+
+## __Getting Started__
+This project was built using __[Vite](https://vitejs.dev/guide/)__ (for faster development), __[React.JS](https://react.dev/learn/installation)__ and __[TailwindCSS](https://tailwindcss.com/)__
+
+#### Installation process
+After cloning the repo, install the neccessary dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+After installation, you view in development mode using
+
+```bash
+npm run dev
+# or
+yarn run dev
+```
+
+You are now good to go
