@@ -4,7 +4,7 @@
 
 A tasty and eye-catchy website for your restaurant.
 
-![Demo Image](https://github.com/Adufe-Obanijesu/restaurant/blob/main/public/images/thumbnail.jpg?raw=true)
+![Demo Image](https://github.com/Adufe-Obanijesu/restaurant/blob/main/public/images/thumbnail.png?raw=true)
 
 ## __Live Demo__
 Click [here](https://dreamy-empanada-a66515.netlify.app/) to view the live demo
